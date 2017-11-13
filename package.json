@@ -1,0 +1,7 @@
+{
+  "name": "uipath-orchestrator",
+  "version": "1.0.0",
+  "description": "UiPath Orchestrator Client for Node.JS",
+  "author": "Brandon Quentin",
+  "license": "MIT"
+}
