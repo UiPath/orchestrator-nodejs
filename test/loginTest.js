@@ -67,5 +67,11 @@ askForPassword(function(password) {
     // by executing multiple requests without waiting we validate the queueing behavior
     testGetUsers(1);
     testGetUsers(2);
-    testGetUsers(3);
+    test.v2.odata.getUsers({}, function (err, data) {
+        console.log('This is attempt #3: ' + (Date.now() - startTimestamp));
+        if (err) {
+            console.error('Error: ' + err);
+        }
+        console.log('Data: ' + util.inspect(data));
+    });
 });
