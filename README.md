@@ -55,6 +55,8 @@ https://demo.uipath.com/
 
 ### TODO
 
+This is just the beginning and there is a lot left to do.
+If you have suggestions and ideas, please do not hesitate to let me know.
 - [ ] Proper unit testing
 - [ ] Extend each API version
 - [ ] Write wiki
