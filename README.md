@@ -25,7 +25,9 @@ var orchestrator = new Orchestrator({
      password: 'yyy',               // The Orchestrator password
      hostname: 'host.company.com', // The instance hostname
      isSecure: true,                // optional (defaults to true)
-     port: 443 // optional (defaults to 80 or 443 based on isSecure)
+     port: 443, // optional (defaults to 80 or 443 based on isSecure)
+     invalidCertificate: false, // optional (defaults to false)
+     connectionPool: 5 // options, 0=unlimited (defaults to 1)
 });
 var apiPath = '/odata/Users';
 var apiQuery = {};
