@@ -21,7 +21,8 @@ function askForPassword(callback) {
     var Writable = require('stream').Writable;
     var rl;
     var mutableStdout = new Writable({
-        write: function(chunk, encoding, callback) {
+        write: function (chunk, encoding, callback) {
+            // noinspection JSLint
             if (!this.muted) {
                 process.stdout.write(chunk, encoding);
             }
@@ -42,7 +43,7 @@ function askForPassword(callback) {
     mutableStdout.muted = true;
 }
 
-askForPassword(function(password) {
+askForPassword(function (password) {
     /** @type {number} */
     var startTimestamp = Date.now();
     /** @type {Orchestrator} */
