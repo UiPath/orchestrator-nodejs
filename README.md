@@ -67,6 +67,7 @@ If you have suggestions and ideas, please do not hesitate to let me know.
 - [X] Add PATCH method
 - [X] Add OrganizationUnitId handling
 - [ ] Add browser support (minified)
+- [ ] Handle Robot key as authentication
 
 ### License
 
