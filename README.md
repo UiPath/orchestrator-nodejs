@@ -60,7 +60,7 @@ orchestrator.v2.odata.getUsers(getUsersQuery, callback);
 
 It is possible to switch organization units with the following method:
 ```javascript
-
+orchestrator.switchOrganizationUnitId(1234);
 ```
 
 Note that you can play around with these by creating a sandbox tenancy here:
