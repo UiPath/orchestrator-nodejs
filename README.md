@@ -19,6 +19,8 @@ Temporary approach
 
 ### Usage
 
+See the [wiki](./wiki) page for a complete reference.
+
 Orchestrator is a class and its constructor takes an `options` object.
 ```javascript
 var util = require('util');
@@ -72,7 +74,7 @@ This is just the beginning and there is a lot left to do.
 If you have suggestions and ideas, please do not hesitate to let me know.
 - [ ] Proper unit testing
 - [X] Extend each API version
-- [ ] Write wiki
+- [X] Write wiki
 - [ ] Write TS definitions
 - [X] Add DELETE method
 - [X] Add PATCH method
