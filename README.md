@@ -13,9 +13,15 @@ This is a Node.JS client for UiPath Orchestrator.
 
 *Work in progress - pending npm deployment*
 
+Temporary approach
+
+`npm install https://github.com/qbrandon/uipath-orchestrator`
+
 ### Usage
 
-Orchestrator is a class and its constructor takes an `option` object.
+See the [wiki](./wiki) page for a complete reference.
+
+Orchestrator is a class and its constructor takes an `options` object.
 ```javascript
 var util = require('util');
 var Orchestrator = require('uipath-orchestrator');
@@ -38,32 +44,43 @@ orchestrator.get(apiPath, apiQuery, function (err, data) {
     console.log('Data: ' + util.inspect(data));
 });
 ```
-The 3 supported basic methods are as follows:
+The 5 supported basic methods are as follows:
 ```javascript
 Orchestrator.get(path, query, callback);
 Orchestrator.post(path, data, callback);
 Orchestrator.put(path, data, callback);
+Orchestrator.patch(path, data, callback);
+Orchestrator.delete(path, callback);
 ```
 where `query` is an querystring-ready *object*, and `data` a `JSON.stringify`able *object*.
 
-These are very generic methods, and the plan is to expose dedicated helpers in the following form:
+These are very generic methods, and the plan is to keep version-dedicated helpers up-to-date in the following form:
 ```javascript
 orchestrator.v2.api.postLogs(postLogsData, callback);
 orchestrator.v2.odata.getUsers(getUsersQuery, callback);
 ``` 
 
+It is possible to switch organization units with the following method:
+```javascript
+orchestrator.switchOrganizationUnitId(1234);
+```
+
 Note that you can play around with these by creating a sandbox tenancy here:
-https://demo.uipath.com/
+https://platform.uipath.com/
 
 ### TODO
 
 This is just the beginning and there is a lot left to do.
 If you have suggestions and ideas, please do not hesitate to let me know.
 - [ ] Proper unit testing
-- [ ] Extend each API version
-- [ ] Write wiki
+- [X] Extend each API version
+- [X] Write wiki
 - [ ] Write TS definitions
-- [ ] Add DELETE method
+- [X] Add DELETE method
+- [X] Add PATCH method
+- [X] Add OrganizationUnitId handling
+- [ ] Add browser support (minified)
+- [ ] Handle Robot key as authentication
 
 ### License
 
