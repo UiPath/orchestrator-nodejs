@@ -19,7 +19,7 @@ Temporary approach
 
 ### Usage
 
-See the [wiki](./wiki) page for a complete reference.
+See the [wiki](https://github.com/qbrandon/uipath-orchestrator/wiki) page for a complete reference.
 
 Orchestrator is a class and its constructor takes an `options` object.
 ```javascript
