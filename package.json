@@ -2,6 +2,11 @@
   "name": "uipath-orchestrator",
   "version": "1.0.0",
   "description": "UiPath Orchestrator Client for Node.JS",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:qbrandon/uipath-orchestrator.git"
+  },
   "author": "Brandon Quentin",
+  "readme": "README.md",
   "license": "MIT"
 }
