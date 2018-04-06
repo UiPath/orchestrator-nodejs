@@ -4,7 +4,7 @@
   "description": "UiPath Orchestrator Client for Node.JS",
   "repository": {
     "type": "git",
-    "url": "git@github.com:qbrandon/uipath-orchestrator.git"
+    "url": "git@github.com:UiPath/orchestrator-nodejs.git"
   },
   "author": "Brandon Quentin",
   "readme": "README.md",
