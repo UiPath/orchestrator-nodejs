@@ -1,6 +1,6 @@
 {
   "name": "uipath-orchestrator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "UiPath Orchestrator Client for Node.JS",
   "repository": {
     "type": "git",
