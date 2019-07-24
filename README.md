@@ -11,10 +11,6 @@ This is a Node.JS client for UiPath Orchestrator.
 
 ### Installation
 
-*Work in progress - pending npm deployment*
-
-Temporary approach
-
 `npm install uipath-orchestrator`
 
 ### Usage
@@ -65,8 +61,18 @@ It is possible to switch organization units with the following method:
 orchestrator.switchOrganizationUnitId(1234);
 ```
 
-Note that you can play around with these by creating a sandbox tenancy here:
+Note that you can play around with these by creating a sandbox tenancy here (experimental support):
 https://platform.uipath.com/
+
+In that case, you will need to use a different method of authentication (please see the tool in `tools/platform`)
+The minimum configuration for platform access is as follows:
+```javascript
+new Orchestrator({
+    refreshToken: 'qwertyuiopasdfghjkllzxcvbnmQWERTYUIOPASDFGHJK',
+    serviceInstanceLogicalName: 'myInstanceLogicalName',
+    path: 'myAccountLogicalName/myInstanceLogicalName'
+})
+```
 
 ### TODO
 
@@ -80,7 +86,6 @@ If you have suggestions and ideas, please do not hesitate to let me know.
 - [X] Add PATCH method
 - [X] Add OrganizationUnitId handling
 - [ ] Add browser support (minified)
-- [ ] Handle Robot key as authentication
 
 ### License
 
