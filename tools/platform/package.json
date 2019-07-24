@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "open": "6.4.0",
+    "base64-url": "2.3.2"
+  },
+  "author": "Brandon Quentin",
+  "license": "MIT"
+}
