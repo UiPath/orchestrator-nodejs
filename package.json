@@ -8,5 +8,11 @@
   },
   "author": "Brandon Quentin",
   "readme": "README.md",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "query-string": "^6.12.1",
+    "path-posix": "^1.0.0",
+    "format-util": "^1.0.5"
+  }
 }
