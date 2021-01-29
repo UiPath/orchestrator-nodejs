@@ -56,21 +56,22 @@ orchestrator.v2.api.postLogs(postLogsData, callback);
 orchestrator.v2.odata.getUsers(getUsersQuery, callback);
 ``` 
 
-It is possible to switch organization units with the following method:
+It is possible to switch organization units (now called Folders) with the following method:
 ```javascript
 orchestrator.switchOrganizationUnitId(1234);
 ```
 
-Note that you can play around with these by creating a sandbox tenancy here (experimental support):
-https://platform.uipath.com/
+You can also authentication in our Automation Cloud:
+https://cloud.uipath.com/
 
-In that case, you will need to use a different method of authentication (please see the tool in `tools/platform`)
-The minimum configuration for platform access is as follows:
+In that case, you will need to use a different method of authentication (please see the [official documentation](https://docs.uipath.com/orchestrator/v0/reference/consuming-cloud-api))
+The minimum configuration for Cloud Orchestrator access is as follows:
 ```javascript
 new Orchestrator({
-    refreshToken: 'qwertyuiopasdfghjkllzxcvbnmQWERTYUIOPASDFGHJK',
-    serviceInstanceLogicalName: 'myInstanceLogicalName',
-    path: 'myAccountLogicalName/myInstanceLogicalName'
+    refreshToken: 'qwertyuiopasdfghjkllzxcvbnmQWERTYUIOPASDFGHJK', // User Key
+    clientId: 'qwertyuiopasdfghjkllzxcvbnmQWERTY',                 // Client ID
+    serviceInstanceLogicalName: 'myInstanceLogicalName',           // Tenant Name
+    path: 'myAccountLogicalName/myInstanceLogicalName'             // Account Name/Tenant Name
 })
 ```
 
@@ -85,7 +86,6 @@ If you have suggestions and ideas, please do not hesitate to let me know.
 - [X] Add DELETE method
 - [X] Add PATCH method
 - [X] Add OrganizationUnitId handling
-- [ ] Add browser support (minified)
 
 ### License
 
